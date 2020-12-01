@@ -1,4 +1,4 @@
-with open('day1input.txt') as f:
+with open('day01input.txt') as f:
     day1input = f.read().splitlines()
 day1input = list(map(int, day1input))
 
