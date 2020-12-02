@@ -36,5 +36,4 @@ for x in range(len(inputData)):
         if z == 1:
             validPasswords2 += 1
 
-# sollte 360 ergeben
 print(validPasswords2)
