@@ -26,15 +26,15 @@ for x in range(len(inputData)):
     tempNumbers = list(map(int, tempNumbers))
     tempLetter = tempCache[1].replace(":", "")
     tempPassword = tempCache[2]
+    z = 0
     if tempLetter in tempPassword:
         y = 0
         for letter in tempPassword:
             y += 1
-            if letter == tempLetter:
-                if y == tempNumbers[0] and y == tempNumbers[1]:
-                    x = 0
-                elif y == tempNumbers[0] or y == tempNumbers[1]:
-                    validPasswords2 += 1
+            if letter == tempLetter and (y == tempNumbers[0] or y == tempNumbers[1]):
+                z += 1
+        if z == 1:
+            validPasswords2 += 1
 
 # sollte 360 ergeben
 print(validPasswords2)
