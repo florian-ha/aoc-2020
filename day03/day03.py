@@ -8,8 +8,8 @@ def treeTraverse(right, down):
     for x in range(len(inputData)):
         if (x % down) == 0:
             temp_line = inputData[x]
-            if y >= 31:
-                y -= 31
+            if y >= len(temp_line):
+                y -= len(temp_line)
             if temp_line[y] == '#':
                 tree_count += 1
             y += right
