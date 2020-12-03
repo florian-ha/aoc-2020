@@ -1,7 +1,7 @@
 with open('day03input.txt') as f:
     inputData = f.read().splitlines()
 
-
+# Function takes in right and down as parameters 
 def treeTraverse(right, down):
     y = 0
     tree_count = 0
